@@ -1,3 +1,4 @@
-insert into customer (name) values ('Tom');
-insert into customer (name) values ('Dick');
-insert into customer (name) values ('Harry');
+insert into customer (name, created, updated) values ('Tom', CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into customer (name, created, updated) values ('Dick',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into customer (name, created, updated) values ('Harry',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+

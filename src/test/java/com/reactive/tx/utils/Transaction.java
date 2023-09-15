@@ -1,5 +1,6 @@
 package com.reactive.tx.utils;
 
+import org.reactivestreams.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.reactive.TransactionalOperator;
@@ -30,4 +31,12 @@ public class Transaction {
             return publisher;
         });
     }
+    /*
+    public static <Publisher<? extends  String> withRollback2(final <P extends Publsher>?> publisher) {
+        return rxtx.execute(tx -> {
+            tx.setRollbackOnly();
+            return publisher;
+        });
+    }
+     */
 }
